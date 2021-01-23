@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: Sanguo Games
+server:
+  port: 8080
+
+# ===== swagger configurations ===== #
+swagger:
+  enabled: true
+  application:
+    name: ${spring.application.name}
+    description: ${spring.application.name}
+    version: ${spring.application.name}
+  try-host: http://localhost:${server.port}
